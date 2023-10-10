@@ -1,0 +1,19 @@
+enum RecordingStatus{
+  ACTIVE
+  INACTIVE
+}
+
+type Facility
+  @model
+  @auth(
+    rules:[
+      {allow: private, operations:[read]}
+      {allow: groups, groups:["admin"]}
+    ]
+  ){
+    id:ID!
+    name:String!
+    numberOfPeople: Int!
+    description: String
+    recordingStatus: RecordingStatus
+  }

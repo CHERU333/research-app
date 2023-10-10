@@ -1,0 +1,50 @@
+{
+  "mac": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-testcam-mac-165408-authRole",
+      "UnauthRoleArn": "arn:aws:iam::973341998113:role/amplify-testcam-mac-165408-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::973341998113:role/amplify-testcam-mac-165408-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-testcam-mac-165408-deployment",
+      "UnauthRoleName": "amplify-testcam-mac-165408-unauthRole",
+      "StackName": "amplify-testcam-mac-165408",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:973341998113:stack/amplify-testcam-mac-165408/08fc3480-61c2-11ee-bace-0e24f6652cc1",
+      "AmplifyAppId": "d1pznwjqlugyda"
+    },
+    "categories": {
+      "auth": {
+        "testcam699881e2": {}
+      },
+      "api": {
+        "testcam": {}
+      },
+      "predictions": {
+        "identifyLabels99a8b80f": {}
+      }
+    }
+  },
+  "nu": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-testcam-nu-163708-authRole",
+      "UnauthRoleArn": "arn:aws:iam::973341998113:role/amplify-testcam-nu-163708-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::973341998113:role/amplify-testcam-nu-163708-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-testcam-nu-163708-deployment",
+      "UnauthRoleName": "amplify-testcam-nu-163708-unauthRole",
+      "StackName": "amplify-testcam-nu-163708",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:973341998113:stack/amplify-testcam-nu-163708/fd93d990-6351-11ee-8679-0604b3c40ae5",
+      "AmplifyAppId": "d1pznwjqlugyda"
+    },
+    "categories": {
+      "auth": {
+        "testcam699881e2": {}
+      },
+      "api": {
+        "testcam": {}
+      },
+      "predictions": {
+        "identifyLabels99a8b80f": {}
+      }
+    }
+  }
+}

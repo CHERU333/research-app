@@ -1,3 +1,2 @@
-# research-app
-# research-app
-# research-app
+## research-app
+卒業研究用のリポジトリです。

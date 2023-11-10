@@ -33,6 +33,7 @@ const useSubscribeFacility = (): {
           if (!cleanedUp) {
             const sub = client.subscribe({
               next: (result: ApiResponse) => {
+                console.log('Facility updated:', result.value.data.onUpdateFacility);//ブラウザコンソールにDBの情報を標準出力
                 setFacility(result.value.data.onUpdateFacility);
               },
               error: (e) => {

@@ -34,6 +34,25 @@ const useSubscribeFacility = (): {
             const sub = client.subscribe({
               next: (result: ApiResponse) => {
                 console.log('Facility updated:', result.value.data.onUpdateFacility);//ブラウザコンソールにDBの情報を標準出力
+                                
+                // サーバーサイドAPIにデータを送信
+                fetch('http://localhost:3001/api/update-facility', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify(result.value.data.onUpdateFacility),
+                })
+                  .then(response => {
+                    if (!response.ok) {
+                      throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    console.log('Request sent successfully');
+                  })
+                  .catch(error => {
+                    console.error('Error sending request:', error);
+                  });
+
                 setFacility(result.value.data.onUpdateFacility);
               },
               error: (e) => {
